@@ -1,0 +1,76 @@
+.foot {
+    background: rgba(132, 139, 137, 0.75);
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 3.125rem;
+        padding-bottom: 4.93rem;
+        padding-left: 6.62rem;
+        padding-right: 6.06rem;
+    }
+
+    &__div1 {
+        width: 24.43rem;
+    }
+
+    &__head {
+        font-weight: 700;
+        font-size: 1.87rem;
+        line-height: 37px;
+        color: #FFFBF0;
+        padding-bottom: 1.25rem;
+    }
+
+    &__dscr {
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #FFFBF0;
+        padding-bottom: 2.37rem;
+    }
+
+    &__imglist {
+        padding-right: 2.18rem;
+    }
+
+    &__div2 {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 6.06rem;
+        padding-left: 9.06rem;
+
+    }
+
+    &__menu {
+        list-style: none;
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 24px;
+        color: #FFFBF0;
+    }
+
+    &__list {
+        padding-bottom: 2.18rem;
+    }
+
+    &__rule {
+        height: 0px;
+        margin-left: 6.43rem;
+        margin-right: 5.93rem;
+        border: 1px solid rgba(255, 251, 240, 0.5);
+    }
+
+    &__p {
+        padding-top: 2rem;
+        padding-bottom: 2.37rem;
+        padding-left: 7.62rem;
+        font-weight: 500;
+        font-size: 1.12rem;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #FFFBF0;
+    }
+
+}

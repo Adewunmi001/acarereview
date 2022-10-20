@@ -1,0 +1,48 @@
+.sec5 {
+    background: rgba(163, 142, 129, 0.1);
+    // height: 689px;
+    left: 0px;
+    top: 3649px;
+    // width: 144px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5rem;
+        padding-bottom: 5.25rem;
+        padding-left: 6.56rem;
+        padding-right: 6.56rem;
+
+    }
+
+    &__division {
+        padding-top: 10.5rem;
+        padding-bottom: 12.86rem;
+        padding-left: 5.03rem;
+    }
+
+    &__dscr {
+        font-weight: 700;
+        font-size: 1.75rem;
+        line-height: 34px;
+        letter-spacing: 0.01em;
+        color: rgba(51, 39, 0, 0.9);
+        // padding-left: 127.5px;
+    }
+
+    &__head {
+        font-weight: 700;
+        font-size: 2.16rem;
+        line-height: 42px;
+        letter-spacing: 0.01em;
+        color: rgba(51, 39, 0, 0.95);
+        padding-top: 2.36rem;
+    }
+
+    &____img {
+        width: 15.62rem;
+        // height: 525px;
+        border-radius: 31.26rem;
+        padding: 2.5rem;
+    }
+}

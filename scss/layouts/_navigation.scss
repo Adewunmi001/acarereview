@@ -1,0 +1,85 @@
+.nav {
+    background: $navBG-color;
+    mix-blend-mode: screen;
+    padding-bottom: 1.25rem;
+
+    &__wrapper {
+        background: linear-gradient(92.02deg, #FFFBF0 4.21%, rgba(196, 196, 196, 0) 103.05%), url(../../image/bg.png) no-repeat;
+        background-position: right;
+        box-shadow: 4px 4px 10px 4px #FFFBF0;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1.437rem;
+        padding-left: 6.437rem;
+        padding-right: 5.625rem;
+    }
+    
+
+    &__logo {
+        color: $logo-color;
+        font-weight: 700;
+        font-size: 1.875rem;
+        line-height: 37px;
+    }
+
+    &__item {
+        list-style-type: none;
+        display: inline-block;
+        padding-right: 2.187rem;
+    }
+
+    &__item--active {
+        padding: 0.75rem 1.25rem;
+        background: $btn-color;
+        box-shadow: 0px 0.5px 10px rgba(51, 39, 0, 0.5);
+        border-radius: 0.312rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $nav-color;
+    }
+
+    &__div1,
+    &__div2 {
+        padding-left: 6.437rem;
+        padding-right: 5.625rem;
+    }
+
+    &__div1 {
+        padding-top: 9.187rem;
+        padding-bottom: 4.312rem;
+    }
+
+    &__head {
+        font-weight: 700;
+        font-size: 4.5rem;
+        color: $logo-color;
+        line-height: 88px;
+        letter-spacing: 0.01rem;
+        padding-bottom: 1.812;
+    }
+    
+    &__edu {
+        color: $edu-color;
+    }
+    &__leg {
+        color: $legacy-color;
+    }
+
+    &__p {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 29px;
+        letter-spacing: 0.01em;
+        width: 40.18rem;
+    }
+
+    &__img {
+        padding-left: 2.875rem;
+    }
+}
