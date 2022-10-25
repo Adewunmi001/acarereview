@@ -898,7 +898,7 @@ body {
   background: orange;
 }
 .platform__ilustration {
-  position: absolute;
+  position: relative;
 }
 .platform__image {
   z-index: 24;
@@ -907,61 +907,36 @@ body {
 .platform__ribbon {
   display: none;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .platform__ribbon {
     display: initial;
-    position: relative;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .platform__ribbon--activea {
-    top: -30rem;
-    right: 0.5rem;
+    position: absolute;
   }
 }
 @media screen and (min-width: 1440px) {
   .platform__ribbon--activea {
-    top: -45rem;
-    right: 0.5rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .platform__ribbon--activeb {
-    top: -30rem;
-    right: -17rem;
+    top: 162rem;
+    right: 37rem;
   }
 }
 @media screen and (min-width: 1440px) {
   .platform__ribbon--activeb {
-    top: -45rem;
-    right: -20rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .platform__ribbon--activec {
-    bottom: 19.75rem;
-    right: -10.812rem;
+    top: 157rem;
+    right: 9rem;
   }
 }
 @media screen and (min-width: 1440px) {
   .platform__ribbon--activec {
-    bottom: 10.75rem;
-    right: -5.812rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .platform__ribbon--actived {
-    right: 15rem;
-    bottom: 25.812rem;
+    bottom: -140rem;
+    right: 4rem;
   }
 }
 @media screen and (min-width: 1440px) {
   .platform__ribbon--actived {
-    right: 26em;
-    bottom: 17.812rem;
+    right: 32rem;
+    bottom: -135rem;
   }
 }
-
 .basic {
   background: #FFFBF0;
   margin-top: -10px;

@@ -43,7 +43,7 @@
     }
 
     &__ilustration {
-        position: absolute;
+        position: relative;
     }
 
     &__image {
@@ -54,53 +54,53 @@
     &__ribbon {
         display: none;
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 1440px) {
             display: initial;
-            position: relative;
+            position: absolute;
         }
     }
 
     &__ribbon--activea {
-        @media screen and (min-width: 1024px) {
-            top: -30rem;
-            right: 0.5rem;
+        @media screen and (min-width: 1440px) {
+            top: 162rem;
+            right: 37rem;
         }
         @media screen and (min-width:1440px) {
-            top: -45rem;
-            right: 0.5rem;
+        //     top: -45rem;
+        //     right: 0.5rem;
         }
         
     }
     &__ribbon--activeb {
-        @media screen and (min-width: 1024px) {
-            top: -30rem;
-            right: -17rem;
+        @media screen and (min-width: 1440px) {
+            top: 157rem;
+            right: 9rem;
         }
         @media screen and (min-width: 1440px) {
-            top: -45rem;
-            right: -20rem;
+            // top: -45rem;
+            // right: -20rem;
         }
         
     }
     &__ribbon--activec {
-        @media screen and (min-width: 1024px) {
-            bottom: 19.75rem;
-            right: -10.812rem;
+        @media screen and (min-width: 1440px) {
+            bottom: -140rem;
+            right: 4rem;
         }
         @media screen and (min-width: 1440px) {
-            bottom: 10.75rem;
-            right: -5.812rem;
+            // bottom: 2rem;
+            // right: -5.812rem;
         }
         
     }
     &__ribbon--actived {
-        @media screen and (min-width: 1024px) {
-            right: 15rem;
-            bottom: 25.812rem;
+        @media screen and (min-width: 1440px) {
+            right: 32rem;
+            bottom: -135rem;
         }
         @media screen and (min-width: 1440px) {
-            right: 26em;
-            bottom: 17.812rem;
+            // right: 26em;
+            // bottom: 17.812rem;
         }
     }
 }
