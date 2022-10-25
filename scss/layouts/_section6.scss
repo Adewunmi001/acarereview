@@ -1,20 +1,26 @@
-.sec6 {
-    background: #FFFBF0;
+.course {
+
+    &__wrapper {
+        @extend .review__wrapper;
+    }
 
     &__container {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 200px 100px;
         padding-top: 4.87rem;
         padding-bottom: 2.12rem;
-        padding-left: 6.43rem;
-        padding-right: 5.93rem;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     &__head {
         font-weight: 700;
         font-size: 1.125rem;
         line-height: 22px;
-        color: rgba(51, 39, 0, 0.85);
+        color: $logo-color;
         padding-bottom: 1.37rem;
     }
 
@@ -23,7 +29,11 @@
     }
 
     &__items--active {
-        text-align: right;
+        
+        @media screen and (min-width: 768px) {
+            text-align: right;
+        }
+        
     }
 
     &__menu {
@@ -32,6 +42,10 @@
         font-size: 0.875rem;
         line-height: 17px;
         color: rgba(51, 39, 0, 0.75);
+        padding-bottom: 2.125rem;
+    }
+
+    &__list {
         padding-bottom: 0.625rem;
     }
 

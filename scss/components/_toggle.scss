@@ -1,0 +1,41 @@
+#header {
+    &__checkbox:checked ~ &__nav_menu {
+        right: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// #header__checkbox:checked ~ ul.header__nav_list .header__nav_item {
+//     display: block;
+// }
+
+// #header__checkbox:checked ~ label.header__toggle .close_menu {
+//     display: block;
+// }
+
+// #header__checkbox:checked ~ label.header__toggle .open_menu {
+//     display: none;
+// }
+
+// @media screen and (min-width: 768px) {
+//     .header {
+//         &__toggle {
+//             display: none;
+//         }
+//         &__open_menu {
+//             flex-direction: row;
+//         }
+//         &__nav_items {
+//             display: block;
+//         }
+//     }
+// }

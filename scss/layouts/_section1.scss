@@ -1,101 +1,149 @@
-.sec1 {
-    align-items: center;
-    width: 100%;
-    padding-left: 6.437rem;
-    padding-right: 5.625rem;
-    margin-left: auto;
-    margin-right: auto;
-    background: #FFFBF0;
+.review {
+    background: $background;
 
-    &__div {
+    &__wrapper {
+        @extend .header__wrapper;
+    }
+
+    &__first_division {
         text-align: center;
+        padding-top: 2rem;
+
+        @media screen and (min-width:768px) {
+            padding-top: 4rem;
+        }
     }
 
-    &__head {
+    &__heading {
+        text-align: center;
         font-weight: 700;
-        font-size: 2rem;
-        line-height: 39px;
+        font-size: 1.5rem;
+        line-height: 22px;
         letter-spacing: 0.01em;
-        padding-top: 4rem;
-        padding-bottom: 18px;
-        color: $legacy-color;
-        width: 28.06rem;
-        margin: 0 auto;
+        padding-bottom: 0.5rem;
+        color: $logo-color;
+
+        @media screen and (min-width:768px) {
+            font-size: 2rem;
+            line-height: 39px;
+            padding-bottom: 1.12rem;
+            width: 28.06rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
-    &__p {
+    &__description {
+        text-align: center;
         font-weight: 500;
-        font-size: 1.25rem;
-        line-height: 24px;
+        font-size: 0.9rem;
+        line-height: 17px;
         letter-spacing: 0.01em;
-        width: 50.5rem;
-        margin: 0 auto;
-        padding-bottom: 2.125rem;
+        padding-bottom: 1.5rem;
+
+        @media screen and (min-width:768px) {
+            font-size: 1rem;
+            line-height: 24px;
+            max-width: 70ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (min-width:1024px) {
+            font-size: 1.25rem;
+            padding-bottom: 2.125rem;
+        }
     }
 
-    &__formBg {
-        background: rgba(196, 196, 196, 0.6);
+    &__form_background {
+        background: $form-background-color;
         border-radius: 0.625rem;
-        max-width: 48.62rem;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        margin-bottom: 2.625rem;
+
+        @media screen and (min-width: 768px) {
+            max-width: 48.62rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2.625rem;
+        }
     }
 
     &__form {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1.125rem 1.312rem 1.062rem;
+        padding: 0.5rem;
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            padding: 1.125rem 1.312rem 1.062rem;
+        }
     }
 
     &__select, &__input {
-        background: #FFFBF0;
+        background: $background;
         border: none;
     }
 
     &__input {
-        flex: 1;
         padding-top: 0.937rem;
         padding-bottom: 1.062rem;
-        padding-left: 2.719rem;
+        padding-left: 0.6rem;
         border-left: 0.5px solid rgba(51, 39, 0, 0.15);
         font-weight: 500;
         font-size: 17px;
         line-height: 21px;
-        color: rgba(51, 39, 0, 0.35);
+        color: $fifth-color;
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            flex: 1;
+            padding-left: 2.719rem;
+        }
     }
 
     &__input::placeholder {
         font-size: 17px;
-        color: rgba(51, 39, 0, 0.35);
+        color: $fifth-color;
     }
 
     &__select {
         padding-top: 0.875rem;
         padding-bottom: 1.062rem;
-        padding-left: 1.562rem;
+        padding-left: 0.5rem;
         border-radius: 10px 0px 0px 10px;
         text-transform: capitalize;
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
-        color: rgba(51, 39, 0, 0.7);
+        color: $third_color;
+
+        @media screen and (min-width: 768px) {
+            font-size: 18px;
+            padding-left: 1.5rem;
+        }
+
     }
 
     &__search{
         border: none;
-        padding: 1.187rem 2rem 1.062rem 2.187rem;
-        background: rgba(120, 129, 128, 0.75);
+        padding: 1.187rem 1rem 1.062rem 1rem;
+        background: $search-color;
         border-radius: 0px 10px 10px 0px;
     }
 
-    &__div2 {
+    &__second_division {
         display: flex;
-        padding-top: 2.625rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-bottom: 2.5rem;
         gap: 1.75rem;
-        padding-left: 4.625rem;
-        padding-right: 4.5625rem;
+
+        @media screen and (min-width:1024px) {
+            flex-direction: row;
+        }
     }
 
     &__divCard {
@@ -104,40 +152,40 @@
     }
 
     &__divCard--active {
-        background-color: rgba(255, 208, 84, 0.85);
+        background-color: $first-card;
         
     }
 
     &__divCard--active1 {
-        background-color: rgba(14, 2, 92, 0.75);
+        background-color: $second-card;
         
     }
 
     &__divCard--active2 {
-        background-color: rgba(12, 112, 3, 0.75);
+        background-color: $third-card;
     }
 
-    &__div3a {
+    &__FUTA {
         padding-left: 1.562rem;
         padding-right: 1.437rem;
     }
 
-    &__head1 {
+    &__FUTA_heading {
         font-weight: 500;
         font-size: 0.937rem;
         line-height: 18px;
         letter-spacing: 0.01em;
-        color: rgba(51, 39, 0, 0.85);
+        color: $logo-color;
         padding-top: 1.312rem;
         padding-bottom: 0.375rem;
     }
 
-    &__description1 {
+    &__FUTA_description {
         font-weight: 500;
         font-size: 0.5rem;
         line-height: 10px;
         letter-spacing: 0.01em;
-        color: rgba(51, 39, 0, 0.7);
+        color: $third_color;
         padding-bottom: 0.5rem;
     }
 
@@ -148,88 +196,84 @@
         padding-bottom: 0.718rem;
     }
 
-    &__rates--active {
-        padding-bottom: 0.5rem;
-    }
-
-    &__ratesStars {
+    &__rates_stars {
         vertical-align: middle;
     }
 
-    &__ratesValue {
+    &__rates_value {
         font-weight: 500;
         font-size: 0.46rem;
         line-height: 9px;
         letter-spacing: 0.01em;
-        color: rgba(51, 39, 0, 0.75);
+        color: $sixth-color;
     }
 
-    &__ratesValue--active {
-        color: rgba(255, 251, 240, 0.7);
+    &__rates_value--active {
+        color: $seventh-color;
     }
 
-    &__div3b {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-
-    &__head2 {
-        font-weight: 500;
-        font-size: 0.937rem;
-        line-height: 18px;
-        letter-spacing: 0.01em;
-        color: rgba(255, 251, 240, 0.9);
-        padding-top: 1.25rem;
-        padding-bottom: 0.375rem;
-    }
-
-    &__description2 {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 0.5rem;
-        line-height: 10px;
-        letter-spacing: 0.01em;
-        color: rgba(255, 251, 240, 0.7);
-        padding-bottom: 0.5rem;
-    }
-
-    &__div3c {
-        padding-left: 1.375rem;
-        padding-right: 1.437rem;
-    }
-
-    &__head3 {
-        font-weight: 500;
-        font-size: 0.937rem;
-        line-height: 18px;
-        letter-spacing: 0.01em;
-        color: rgba(255, 251, 240, 0.9);
-        padding-top: 1.312rem;
-        padding-bottom: 0.375rem;
-    }
-
-    &__description3 {
-        font-weight: 500;
-        font-size: 0.5rem;
-        line-height: 10px;
-        letter-spacing: 0.01em;
-        color: rgba(255, 251, 240, 0.8);
-        padding-bottom: 0.25rem;
-    }
-
-    &__div4 {
+    &__icon_menu {
         display: flex;
         gap: 1.75rem;
         padding-bottom: 1.937rem;
     }
 
-    &__div4a {
+    &__icon_menu--active {
+        color: $seventh-color;
+    }
+
+    &__icon {
         display: flex;
         gap: 0.25rem;
     }
 
-    &__div4--active {
-        color: rgba(255, 251, 240, 0.8);
+    &__UI {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    &__UI_heading {
+        font-weight: 500;
+        font-size: 0.937rem;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: $seventh-color;
+        padding-top: 1.25rem;
+        padding-bottom: 0.375rem;
+    }
+
+    &__UI_description {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.5rem;
+        line-height: 10px;
+        letter-spacing: 0.01em;
+        color: $eight-color;
+        padding-bottom: 0.5rem;
+    }
+
+    &__FUNAAB {
+        padding-left: 1.375rem;
+        padding-right: 1.437rem;
+    }
+
+    &__FUNAAB_heading {
+        font-weight: 500;
+        font-size: 0.937rem;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: $seventh-color;
+        padding-top: 1.312rem;
+        padding-bottom: 0.375rem;
+    }
+        
+    &__FUNAAB_description {
+        font-weight: 500;
+        font-size: 0.5rem;
+        line-height: 10px;
+        letter-spacing: 0.01em;
+        color: $eight-color;
+        padding-bottom: 0.25rem;
     }
 
     &__circle {

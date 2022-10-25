@@ -1,48 +1,102 @@
-.sec5 {
+.professor {
     background: rgba(163, 142, 129, 0.1);
-    // height: 689px;
-    left: 0px;
-    top: 3649px;
-    // width: 144px;
 
-    &__container {
+    &_wrapper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: .5rem;
+        padding-right: .5rem;
+
+        @media screen and (min-width: 320px) {
+            max-width: 320px;
+        }
+        @media screen and (min-width: 375px) {
+            max-width: 375px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        @media screen and (min-width: 425px) {
+            max-width: 425px;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+            padding-left: 3.27rem;
+            padding-right: 2.625rem;
+        }
+        @media screen and (min-width: 1024px) {
+            max-width: 1024px;
+        }
+        @media screen and (min-width: 1440px) {
+            max-width: 1440px;
+            padding-left: 6.43rem;
+            padding-right: 6rem;
+        }
+    }
+
+    &__flex {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-top: 5rem;
         padding-bottom: 5.25rem;
-        padding-left: 6.56rem;
-        padding-right: 6.56rem;
+        gap: 2rem;
 
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &____img {
+        width: 13rem;
+        border-radius: 31.26rem;
+
+        @media screen and (min-width:1024px) {
+            width: 15.62rem;
+        }
     }
 
     &__division {
-        padding-top: 10.5rem;
-        padding-bottom: 12.86rem;
-        padding-left: 5.03rem;
+        text-align: center;
+        
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
     }
 
     &__dscr {
         font-weight: 700;
-        font-size: 1.75rem;
-        line-height: 34px;
+        font-size: 1rem;
+        line-height: 25px;
         letter-spacing: 0.01em;
-        color: rgba(51, 39, 0, 0.9);
-        // padding-left: 127.5px;
+        color: $ninth-color;
+
+        @media screen and(min-width:768px) {
+            font-size: 1rem;
+            max-width: 60ch;
+            line-height: 34px;
+        }
+        @media screen and (min-width: 1024px) {
+            max-width: 38ch;
+            font-size: 1.75rem;
+        }
     }
 
-    &__head {
+    &__title {
         font-weight: 700;
-        font-size: 2.16rem;
-        line-height: 42px;
+        font-size: 1rem;
+        line-height: 35px;
         letter-spacing: 0.01em;
-        color: rgba(51, 39, 0, 0.95);
-        padding-top: 2.36rem;
+        color: $tenth-color;
+        padding-top: 1.5rem;
+
+        @media screen and (min-width:768px) {
+            font-size: 2.16rem;
+            line-height: 42px;
+            padding-top: 2.36rem;
+        }
     }
 
-    &____img {
-        width: 15.62rem;
-        // height: 525px;
-        border-radius: 31.26rem;
-        padding: 2.5rem;
-    }
 }

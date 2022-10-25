@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,349 +7,383 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acarereview</title>
     <link rel="stylesheet" href="/scss/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+<!--header section-->
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__navbar">
+                <div class="header__logo">Acarereview</div>
+                <input type="checkbox" id="header__checkbox" class="header__checkbox">
+                <label for="header__checkbox" class="header__toggle" id="header__open_menu">
+                    <i class="fa fa-bars header__open_menu"></i>
+                </label>
+                <nav class="header__nav_menu" id="header__nav_menu">
+                    <label for="header__checkbox" class="header__toggle" id="header__close_menu">
+                        <i class="fa fa-close header__close_menu"></i>
+                    </label>
+                    <ul class="header__nav_list">
+                        <li class="header__nav_item"><a href="#" class="header__nav_link">Page</a></li>
+                        <li class="header__nav_item"><a href="#" class="header__nav_link">Blog</a></li>
+                        <li class="header__nav_item"><a href="#" class="header__nav_link">About</a></li>
+                        <li class="header__nav_item"><a href="#" class="header__nav_link">Login</a></li>
+                        <li class="header__nav_item header__nav_item--active"><a href=""  class="header__nav_link header__nav_link--active">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-    <div class="center">
-        <!----------------------header sart here------------------>
-    <header class="nav">
-        <div class="nav__wrapper">
-            <nav class="nav__nav">
-                <h2 class="nav__logo">Acarereview</h2>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="" class="nav__link">Page</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Blog</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Login</a></li>
-                    <li class="nav__item nav__item--active"><a href=""  class="nav__link">Sign Up</a></li>
-                </ul>
-            </nav>
-            <div class="nav__div1">
-                <h1 class="nav__head"><span class="nav__edu">Education</span> is the <br> best <span class="nav__leg">legacy</span></h1>
-                <p class="nav__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>
-            </div>
-            <div class="nav__div2">
-                <img class="nav__img" src="image/googleplay.png" alt="">&nbsp;
-                <img class="nav__img2" src="image/appstore.png" alt="">
-            </div>
+            <section class="header__hero">
+                <h1 class="header__hero_title"><span class="header__orange_text">Education</span> is the <br> best <span class="header__gold_text">legacy!</span></h1>
+                <p class="header__hero_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </p>
+                <div class="header__hero_download_btns">
+                    <button class="header__hero_playstore">
+                        <img src="image/logos_google-play-icon.png" alt="" class="header__hero_google_icon">
+                        <div class="header__btn_content">
+                            <p class="header__hero_get">GET IT ON</p>
+                            <p class="header__hero_download">Google Play</p>
+                        </div>
+                    </button>
+                    <button class="header__hero_apple">
+                        <img src="image/logos_apple-icon.png" alt="" class="header__hero_google_icon">
+                        <div class="header__hero_btn_content">
+                            <GET class="header__hero_dwn">Download on the</p>
+                            <p class="header__hero_app_store">App Store</p>
+                        </div>
+                    </button>
+                </div>
+            </section>
         </div>
     </header>
-        <!------------------------------header ends here-------------------->
 
-
-        <!-----------------------------------section 1 begins here--------------->
-        <section class="sec1">
-            <div class="sec1__div">
-                <h1 class="sec1__head">Reviews of all universities in West Africa</h1>
-                <p class="sec1__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nuncvulputate libero et velit interdum, ac aliquet odio mattis dolor sit amet, consectetur adipiscing elit. Nuncvulputate libero et velitinterdum, ac aliquet odio mattis.</p>
-                <div class="sec1__formBg">
-                    <form class="sec1__form" action="">
-                        <select name="" id="" class="sec1__select">
-                            <option value="category" class="sec1__category">category</option>
+<!--section 0ne-->
+    <section class="review">
+        <div class="review__wrapper">
+            <div class="review__first_division">
+                <h1 class="review__heading">Reviews of all universities in West Africa</h1>
+                <p class="review__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nuncvulputate libero et velit interdum, ac aliquet odio mattis dolor sit amet, consectetur adipiscing elit. Nuncvulputate libero et velitinterdum, ac aliquet odio mattis.</p>
+                <div class="review__form_background">
+                    <form class="review__form" action="">
+                        <select name="" id="" class="review__select">
+                            <option value="category" class="review__category">category</option>
                         </select>
-                        <input type="text" placeholder="Enter key words" class="sec1__input">
-                        <img class="sec1__search" src="image/search.png" alt="" style="background-color:grey;">
+                        <input type="text" placeholder="Enter key words" class="review__input">
+                        <img class="review__search" src="image/search.png" alt="" style="background-color:grey;">
                     </form>
                 </div>
             </div>
-            <div class="sec1__div2">
-                <div class="sec1__divCard sec1__divCard--active">
-                    <img class="sec1__img1" src="image/language-1.png" alt="">
-                    <div class="sec1__div3a">
-                        <h4 class="sec1__head1">Federal University of Akure (FUTA)</h4>
-                        <p class="sec1__description1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. consectetur adipiscing elit, Nunc vul pulibero et velit interdum, ac aliquet odio mattis, consectetur adipicing elit, nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
-                        <div class="sec1__rates">
-                            <div class="sec1__ratesStars">
-                                <img class="sec1__star1" src="image/Star.png" alt="">
-                                <img class="sec1__star1" src="image/Star.png" alt="">
-                                <img class="sec1__star1" src="image/Star.png" alt="">
-                                <img class="sec1__star1" src="image/Star.png" alt="">
-                                <img class="sec1__star1" src="image/Star.png" alt="">
-                                <img class="sec1__star1" src="image/Star.png" alt="">
-                                <img class="sec1__star1" src="image/Star.png" alt="">
+            <div class="review__second_division">
+                <div class="review__divCard review__divCard--active">
+                    <img class="review__image" src="image/language-1.png" alt="">
+                    <div class="review__FUTA">
+                        <h4 class="review__FUTA_heading">Federal University of Akure (FUTA)</h4>
+                        <p class="review__FUTA_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. consectetur adipiscing elit, Nunc vul pulibero et velit interdum, ac aliquet odio mattis, consectetur adipicing elit, nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
+                        <div class="review__rates">
+                            <div class="review__rates_stars">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
                             </div>
-                            <p class="sec1__ratesValue">Rates (7k+)</p>
+                            <p class="review__rates_value">Rates (7k+)</p>
                         </div>
-                        <div class="sec1__div4">
-                            <div class="sec1__div4a">
-                                <img class="sec1__heart" src="image/heart.png" alt="">
-                                <p class="sec1__286">286k</p>
+                        <div class="review__icon_menu ">
+                            <div class="review__icon">
+                                <img class="review__heart" src="image/heart.png" alt="">
+                                <p class="review__286">286k</p>
                             </div>
-                            <div class="sec1__div4a">
-                                <img class="sec1__bk" src="image/bookmarks1.png" alt="">
-                                <p class="sec1__50">50</p>
+                            <div class="review__icon">
+                                <img class="review__bookmark" src="image/bookmarks1.png" alt="">
+                                <p class="review__50">50</p>
                             </div>
-                            <div class="sec1__div4a">
-                                <img class="sec1__share" src="image/share1.png" alt="">
-                                <p class="sec1__100">100</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-                <div class="sec1__divCard sec1__divCard--active1">
-                    <img class="sec1__img1" src="image/language-2.png" alt="">
-                    <div class="sec1__div3b">
-                        <h4 class="sec1__head2">University of Ibadan (UI)</h4>
-                        <p class="sec1__description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. consectetur adipiscing elit, Nunc vul pulibero et velit interdum, ac aliquet odio mattis, consectetur adipicing elit, nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
-                        <div class="sec1__rates">
-                            <div class="sec1__ratesStars">
-                                <img class="sec1__star" src="image/Star.png" alt="">
-                                <img class="sec1__star" src="image/Star.png" alt="">
-                                <img class="sec1__star" src="image/Star.png" alt="">
-                                <img class="sec1__star" src="image/Star.png" alt="">
-                                <img class="sec1__star" src="image/Star.png" alt="">
-                                <img class="sec1__star" src="image/Star.png" alt="">
-                                <img class="sec1__star" src="image/Star.png" alt="">
-                            </div>
-                            <p class="sec1__ratesValue sec1__ratesValue--active">Rates (7k+)</p>
-                        </div>
-                        <div class="sec1__div4 sec1__div4--active">
-                            <div class="sec1__div4a">
-                                <img class="sec1__heart" src="image/heart.png" alt="">
-                                <p class="sec1__286">286k</p>
-                            </div>
-                            <div class="sec1__div4a">
-                                <img class="sec1__bk" src="image/bookmarks2.png" alt="">
-                                <p class="sec1__50">50</p>
-                            </div>
-                            <div class="sec1__div4a">
-                                <img class="sec1__share" src="image/share2.png" alt="">
-                                <p class="sec1__100">100</p>
+                            <div class="review__icon">
+                                <img class="review__share" src="image/share1.png" alt="">
+                                <p class="review__100">100</p>
                             </div>
                         </div>
                     </div>
                 </div> 
-                <div class="sec1__divCard sec1__divCard--active2">
-                    <img class="sec1__img1" src="image/language-1.png" alt="">
-                    <div class="sec1__div3c">
-                        <h4 class="sec1__head3">Federal University of Agriculture Abeokuta (FUNAAB)</h4>
-                        <p class="sec1__description3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. consectetur adipiscing elit, Nunc vul pulibero et velit interdum, ac aliquet odio mattis, consectetur adipicing elit, nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
-                        <div class="sec1__rates sec1__rates--active">
-                            <div class="sec1__ratesStars">
-                                <img class="sec1__star" src="image/Star.png" alt="">
-                                <img class="sec1__star" src="image/Star.png" alt="">
-                                <img class="sec1__star" src="image/Star.png" alt="">
-                                <img class="sec1__star" src="image/Star.png" alt="">
-                                <img class="sec1__star" src="image/Star.png" alt="">
-                                <img class="sec1__star" src="image/Star.png" alt="">
-                                <img class="sec1__star" src="image/Star.png" alt="">
+                <div class="review__divCard review__divCard--active1">
+                    <img class="review__image" src="image/language-2.png" alt="">
+                    <div class="review__UI">
+                        <h4 class="review__UI_heading">University of Ibadan (UI)</h4>
+                        <p class="review__UI_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. consectetur adipiscing elit, Nunc vul pulibero et velit interdum, ac aliquet odio mattis, consectetur adipicing elit, nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
+                        <div class="review__rates">
+                            <div class="review__rates_stars">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
                             </div>
-                            <p class="sec1__ratesValue sec1__ratesValue--active ">Rates (7k+)</p>
+                            <p class="review__rates_value review__rates_value--active">Rates (7k+)</p>
                         </div>
-                        <div class="sec1__div4 sec1__div4--active sec1__div4--active2">
-                            <div class="sec1__div4a">
-                                <img class="sec1__heart" src="image/heart.png" alt="">
-                                <p class="sec1__286">286k</p>
+                        <div class="review__icon_menu review__icon_menu--active">
+                            <div class="review__icon">
+                                <img class="review__heart" src="image/heart.png" alt="">
+                                <p class="review__286">286k</p>
                             </div>
-                            <div class="sec1__div4a">
-                                <img class="sec1__bk" src="image/bookmarks3.png" alt="">
-                                <p class="sec1__50">50</p>
+                            <div class="review__icon">
+                                <img class="review__bookmark" src="image/bookmarks2.png" alt="">
+                                <p class="review__50">50</p>
                             </div>
-                            <div class="sec1__div4a">
-                                <img class="sec1__share" src="image/share2.png" alt="">
-                                <p class="sec1__100">100</p>
+                            <div class="review__icon">
+                                <img class="review__share" src="image/share2.png" alt="">
+                                <p class="review__100">100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="review__divCard review__divCard--active2">
+                    <img class="review__image" src="image/language-1.png" alt="">
+                    <div class="review__FUNAAB">
+                        <h4 class="review__FUNAAB_heading">Federal University of Agriculture Abeokuta (FUNAAB)</h4>
+                        <p class="review__FUNAAB_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. consectetur adipiscing elit, Nunc vul pulibero et velit interdum, ac aliquet odio mattis, consectetur adipicing elit, nunc vulputate libero et velit interdum, ac aliquet odio mattis...</p>
+                        <div class="review__rates review__rates--active">
+                            <div class="review__rates_stars">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                                <img class="review__star" src="image/Star.png" alt="">
+                            </div>
+                            <p class="review__rates_value review__rates_value--active ">Rates (7k+)</p>
+                        </div>
+                        <div class="review__icon_menu review__icon_menu--active review__icon_menu--active2">
+                            <div class="review__icon ">
+                                <img class="review__heart" src="image/heart.png" alt="">
+                                <p class="review__286">286k</p>
+                            </div>
+                            <div class="review__icon">
+                                <img class="review__bookmark" src="image/bookmarks3.png" alt="">
+                                <p class="review__50">50</p>
+                            </div>
+                            <div class="review__icon">
+                                <img class="review__share" src="image/share2.png" alt="">
+                                <p class="review__100">100</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="sec1__circle">
-                <img class="sec1__circleList" src="image/circle1.png" alt="">
-                <img class="sec1__circleList" src="image/circle2.png" alt="">
-                <img class="sec1__circleList" src="image/circle1.png" alt="">
-                <img class="sec1__circleList" src="image/circle1.png" alt="">
-            </div>
-        </section>
-        <!-------------------------------section 1 ends here---------------------->
+        </div>
+        <div class="review__circle">
+            <img class="review__circleList" src="image/circle1.png" alt="">
+            <img class="review__circleList" src="image/circle2.png" alt="">
+            <img class="review__circleList" src="image/circle1.png" alt="">
+            <img class="review__circleList" src="image/circle1.png" alt="">
+        </div>
+    </section>
 
-
-            <!-------------------------------section 2 starts here-------------------->
-        <section class="sec2">
-            <div class="sec2__container">
-                <img class="sec2__img" src="image/student-1.png" alt="">
-                <img class="sec2__ribbon sec2__ribbon--activea" src="image/Ellipse-1.png" alt="">
-                <img class="sec2__ribbon sec2__ribbon--activeb" src="image/Ellipse -2.png" alt="">
-                <img class="sec2__ribbon sec2__ribbon--activec" src="image/Ellipse-3.png" alt="">
-                <img class="sec2__ribbon sec2__ribbon--actived" src="image/Ellipse-4.png" alt="">
-                <div class="sec2__div">
-                    <h3 class="sec2__head">The Services You Can Get From Learning Process</h3>
-                    <p class="sec2__p">Curabitur tempor quis eros tempus lacinia. Nam bibendum pellen tesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Sed nec ante dic tum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.</p>
-                    <a href="" class="btn sec2__btn">Get Started</a>
+<!--section two-->
+    <section class="service">
+        <div class="service__wrapper">
+            <div class="service__flex">
+                <div class="service__illustration">
+                    <img class="service__image" src="image/student-1.png" alt="">
+                    <img class="service__ribbon service__ribbon--activea" src="image/Ellipse-1.png" alt="">
+                    <img class="service__ribbon service__ribbon--activeb" src="image/Ellipse -2.png" alt="">
+                    <img class="service__ribbon service__ribbon--activec" src="image/Ellipse-3.png" alt="">
+                    <img class="service__ribbon service__ribbon--actived" src="image/Ellipse-4.png" alt="">
+                </div>
+                    
+                <div class="service__content">
+                    <h3 class="service__title">The Services You Can Get From Learning Process</h3>
+                    <p class="service__description">Curabitur tempor quis eros tempus lacinia. Nam bibendum pellen tesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Sed nec ante dic tum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.</p>
+                    <a href="" class="service__btn">Get Started</a>
                 </div> 
             </div>
-        </section>
-        <!-----------------------------------section 2 ends here------------------->
+            
+        </div>
+    </section>
 
-        <!-------------------------------------section 3 starts here------------>
-        <section class="sec3">
-            <div class="sec3__container">
-                <div class="sec3__div">
-                    <h3 class="sec3__head">Our Platform is Basically Created For Students </h3>
-                    <p class="sec3__p">Curabitur tempor quis eros tempus lacinia. Nam bibendum pellen tesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Sed nec ante dic tum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.</p>
-                    <a href="" class="btn sec3__btn">Get Started</a>
+<!--section three-->
+    <section class="platform">
+        <div class="platform__wrapper">
+            <div class="platform__flex">
+                <div class="platform__content">
+                    <h3 class="platform__title">Our Platform is Basically Created For Students </h3>
+                    <p class="platform__description">Curabitur tempor quis eros tempus lacinia. Nam bibendum pellen tesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Sed nec ante dic tum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.</p>
+                    <a href="" class="btn platform__btn">Get Started</a>
                 </div>
-                <img class="sec3__img" src="image/student-2.png" alt="">
-                <img class="sec3__ribbon sec3__ribbon--activea" src="image/Ellipse-11.png" alt="">
-                <img class="sec3__ribbon sec3__ribbon--activeb" src="image/Ellipse-22.png" alt="">
-                <img class="sec3__ribbon sec3__ribbon--activec" src="image/Ellipse-33.png" alt="">
-                <img class="sec3__ribbon sec3__ribbon--actived" src="image/Ellipse-44.png" alt="">
-            </div>
-        </section>
-        <!--------------------------------------section 3 ends here---------------->
-
-
-        <!-----------------------------------------section 4 starts here---------------->
-        <section class="card">
-            <div class="card__div1">
-                <h3 class="card__head">The Basic Aspect of Our Learnings</h3>
-                <div class="card__arrow">
-                    <img class="card__arrow1" src="image/arrow-1.png" alt="">
-                    <img class="card__arrow2" src="image/arrow-2.png" alt="">
-                </div>
-            </div>
-            <div class="card__container">
-                <div class="card__div">
-                    <div class="card__bgImg">
-                        <img class="card__img" src="image/card-1.png" alt="">
+                <div class="platform__illustration">
+                    <img class="platform__image" src="image/student-2.png" alt="">
+                    <div class="platform__ribbon_container">
+                        <img class="platform__ribbon platform__ribbon--activea" src="image/Ellipse-11.png" alt="">
+                        <img class="platform__ribbon platform__ribbon--activeb" src="image/Ellipse-22.png" alt="">
+                        <img class="platform__ribbon platform__ribbon--activec" src="image/Ellipse-33.png" alt="">
+                        <img class="platform__ribbon platform__ribbon--actived" src="image/Ellipse-44.png" alt="">
                     </div>
-                    <h5 class="card__head2">Study Room</h5>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- section four-->
+    <section class="basic">
+        <div class="basic__wrapper">
+            <div class="basic__heading">
+                <h3 class="basic__title">The Basic Aspect of Our Learnings</h3>
+                <div class="basic__switch">
+                    <img class="basic__arrow" src="image/arrow-1.png" alt="">
+                    <img class="basic__arrow" src="image/arrow-2.png" alt="">
+                </div>
+            </div>
+            <div class="basic__cards">
+                <div class="basic__card">
+                    <div class="basic__card_image">
+                        <img class="basic__img" src="image/card-1.png" alt="">
+                    </div>
+                    <h5 class="basic__card_title">Study Room</h5>
                     <div>
-                        <p class="card__p">Aliquam vehicula sapien nec ante auctor, quis mollis leo tincidunt. Integ er nec diam a libero tincidunt .</p>
+                        <p class="basic__description">Aliquam vehicula sapien nec ante auctor, quis mollis leo tincidunt. Integ er nec diam a libero tincidunt .</p>
                     </div>
                 </div>
-                <div class="card__div card__div--active">
-                    <div class="card__bgImg card__bgImg--active">
-                        <img class="card__img  card__img--active" src="image/card-2.png" alt="">
+                <div class="basic__card basic__card--active">
+                    <div class="basic__card_image basic__card_image--active">
+                        <img class="basic__img  basic__img--active" src="image/card-2.png" alt="">
                     </div>
-                    <h5 class="card__head2">Study Room</h5>
+                    <h5 class="basic__card_title basic__card_title--active">University Curricula</h5>
                     <div>
-                        <p class="card__p card__p--active">Aliquam vehicula sapien nec ante auctor, quis mollis leo tincidunt. Integ er nec diam a libero tincidunt .</p>
+                        <p class="basic__description basic__description--active">Aliquam vehicula sapien nec ante auctor, quis mollis leo tincidunt. Integ er nec diam a libero tincidunt .</p>
                     </div>
                 </div>
-                <div class="card__div">
-                    <div class="card__bgImg">
-                        <img class="card__img" src="image/card-3.png" alt="">
+                <div class="basic__card">
+                    <div class="basic__card_image">
+                        <img class="basic__img" src="image/card-3.png" alt="">
                     </div>
-                    <h5 class="card__head2">Study Room</h5>
+                    <h5 class="basic__card_title">Online Course</h5>
                     <div>
-                        <p class="card__p">Aliquam vehicula sapien nec ante auctor, quis mollis leo tincidunt. Integ er nec diam a libero tincidunt .</p>
+                        <p class="basic__description">Aliquam vehicula sapien nec ante auctor, quis mollis leo tincidunt. Integ er nec diam a libero tincidunt .</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--------------------------------section 4 ends here--------------------->
+        </div>
+        
+    </section>
 
-
-        <!----------------------------------section 5 starts here-------------->
-        <section class="sec5">
-            <div class="sec5__container">
-                <img class="sec5__img" src="image/man2.png" alt="">
-                <div class="sec5__division">
-                    <p class="sec5__dscr"><sup><img src="image/ap1.png" alt=""></sup> <em>Vestibulum dictum ultrices elit a luctus. Sed in ante ut leo congue posuere at sit amet ligula. Pellentesque eget augue nec nisl sodales blandit sed et sem. Aenean quis finibus arcu, in hendrerit purus Praes ent ac aliquet lorem. </em><sub><img src="image/ap2.png" alt=""></sub></p>
-                    <h4 class="sec5__head">Professor Charles</h4>
+<!--section five-->
+    <section class="professor">
+        <div class="professor__wrapper">
+            <div class="professor__flex">
+                <div class="professor__image">
+                    <img class="professor__img" src="image/man2.png" alt="">
+                </div>
+                <div class="professor__division">
+                    <p class="professor__dscr"><sup><img src="image/ap1.png" alt=""></sup> <em>Vestibulum dictum ultrices elit a luctus. Sed in ante ut leo congue posuere at sit amet ligula. Pellentesque eget augue nec nisl sodales blandit sed et sem. Aenean quis finibus arcu, in hendrerit purus Praes ent ac aliquet lorem. </em><sub><img src="image/ap2.png" alt=""></sub></p>
+                    <h4 class="professor__title">Professor Charles</h4>
                 </div>
             </div>
-        </section>
-        <!------------------------------------section 5 ends here---------------->
+        </div>
+    </section>
 
-
-        <!----------------------------------section 6 starts here------------->
-        <section class="sec6">
-            <div class="sec6__container">
-                <div class="sec6__items">
-                    <h5 class="sec6__head">Course Name</h5>
-                    <ul class="sec6__menu">
-                        <li class="sec6__list">Satistics</li>
-                        <li class="sec6__list">Physics</li>
-                        <li class="sec6__list">Chemistry</li>
-                        <li class="sec6__list">Mathematics</li>
-                        <li class="sec6__list">General Studies</li>
-                        <li class="sec6__list">French</li>
-                        <li class="sec6__list">Economics</li>
-                        <li class="sec6__list">Logical Reasoning</li>
-                        <li class="sec6__list">computer Science</li>
-                        <li class="sec6__list">Social Science</li>
-                        <li class="sec6__list">Biology</li>
-                        <li class="sec6__list">System Engineering</li>
+<!--section six-->
+    <section class="course">
+        <div class="course__wrapper">
+            <div class="course__container">
+                <div class="course__items">
+                    <h5 class="course__head">Course Name</h5>
+                    <ul class="course__menu">
+                        <li class="course__list">Statistics</li>
+                        <li class="course__list">Physics</li>
+                        <li class="course__list">Chemistry</li>
+                        <li class="course__list">Mathematics</li>
+                        <li class="course__list">General Studies</li>
+                        <li class="course__list">French</li>
+                        <li class="course__list">Economics</li>
+                        <li class="course__list">Logical Reasoning</li>
+                        <li class="course__list">computer Science</li>
+                        <li class="course__list">Social Science</li>
+                        <li class="course__list">Biology</li>
+                        <li class="course__list">System Engineering</li>
                     </ul>
                 </div>
-                <div class="sec6__items">
-                    <h5 class="sec6__head">Course code</h5>
-                    <ul class="sec6__menu">
-                        <li class="sec6__list">STS 103</li>
-                        <li class="sec6__list">PHS 101</li>
-                        <li class="sec6__list">CHM 102</li>
-                        <li class="sec6__list">MTS 105</li>
-                        <li class="sec6__list">GNS 111</li>
-                        <li class="sec6__list">GNS 101</li>
-                        <li class="sec6__list">ECO 103</li>
-                        <li class="sec6__list">PHY 111</li>
-                        <li class="sec6__list">CSC 102</li>
-                        <li class="sec6__list">SOS 105</li>
-                        <li class="sec6__list">BIO 101</li>
-                        <li class="sec6__list">ENG 103</li>
+                <div class="course__items">
+                    <h5 class="course__head">Course code</h5>
+                    <ul class="course__menu">
+                        <li class="course__list">STS 103</li>
+                        <li class="course__list">PHS 101</li>
+                        <li class="course__list">CHM 102</li>
+                        <li class="course__list">MTS 105</li>
+                        <li class="course__list">GNS 111</li>
+                        <li class="course__list">GNS 101</li>
+                        <li class="course__list">ECO 103</li>
+                        <li class="course__list">PHY 111</li>
+                        <li class="course__list">CSC 102</li>
+                        <li class="course__list">SOS 105</li>
+                        <li class="course__list">BIO 101</li>
+                        <li class="course__list">ENG 103</li>
                     </ul>
                 </div>
-                <div class="sec6__items sec6__items--active">
-                    <h5 class="sec6__head sec6__head--active">No of Reviews</h5>
-                    <ul class="sec6__menu sec6__menu--active">
-                        <li class="sec6__list sec6__list--active">10,749,402,351</li>
-                        <li class="sec6__list sec6__list--active">3,052,478,23I,674</li>
-                        <li class="sec6__list sec6__list--active">80,347,239,390,343</li>
-                        <li class="sec6__list sec6__list--active">5,382,976,385,459</li>
-                        <li class="sec6__list sec6__list--active">32,584,458,543,424,599</li>
-                        <li class="sec6__list sec6__list--active">234,354,543,324</li>
-                        <li class="sec6__list sec6__list--active">45,567,867,498,860</li>
-                        <li class="sec6__list sec6__list--active">254,765,897</li>
-                        <li class="sec6__list sec6__list--active">569,767,435,908,432,657 </li>
-                        <li class="sec6__list sec6__list--active">7,234,236,765</li>
-                        <li class="sec6__list sec6__list--active">347,485,324,452,098</li>
-                        <li class="sec6__list sec6__list--active">23,568,687,460,687</li>
+                <div class="course__items course__items--active">
+                    <h5 class="course__head course__head--active">No of Reviews</h5>
+                    <ul class="course__menu course__menu--active">
+                        <li class="course__list course__list--active">10,749,402,351</li>
+                        <li class="course__list course__list--active">3,052,478,23I,674</li>
+                        <li class="course__list course__list--active">80,347,239,390,343</li>
+                        <li class="course__list course__list--active">5,382,976,385,459</li>
+                        <li class="course__list course__list--active">32,584,458,543,424,599</li>
+                        <li class="course__list course__list--active">234,354,543,324</li>
+                        <li class="course__list course__list--active">45,567,867,498,860</li>
+                        <li class="course__list course__list--active">254,765,897</li>
+                        <li class="course__list course__list--active">569,767,435,908,432,657 </li>
+                        <li class="course__list course__list--active">7,234,236,765</li>
+                        <li class="course__list course__list--active">347,485,324,452,098</li>
+                        <li class="course__list course__list--active">23,568,687,460,687</li>
                     </ul>
                 </div>
-                <div class="sec6__items">
-                    <h5 class="sec6__head">Department</h5>
-                    <ul class="sec6__menu">
-                        <li class="sec6__list">Satistics</li>
-                        <li class="sec6__list">Physics</li>
-                        <li class="sec6__list">Chemistry</li>
-                        <li class="sec6__list">Mathematics</li>
-                        <li class="sec6__list">English</li>
-                        <li class="sec6__list">French</li>
-                        <li class="sec6__list">Economics</li>
-                        <li class="sec6__list">Philosophy</li>
-                        <li class="sec6__list">computer Science</li>
-                        <li class="sec6__list">Political Science</li>
-                        <li class="sec6__list">Biology</li>
-                        <li class="sec6__list">computer Engineering</li>
+                <div class="course__items">
+                    <h5 class="course__head">Department</h5>
+                    <ul class="course__menu">
+                        <li class="course__list">Statistics</li>
+                        <li class="course__list">Physics</li>
+                        <li class="course__list">Chemistry</li>
+                        <li class="course__list">Mathematics</li>
+                        <li class="course__list">English</li>
+                        <li class="course__list">French</li>
+                        <li class="course__list">Economics</li>
+                        <li class="course__list">Philosophy</li>
+                        <li class="course__list">computer Science</li>
+                        <li class="course__list">Political Science</li>
+                        <li class="course__list">Biology</li>
+                        <li class="course__list">computer Engineering</li>
                     </ul>
                 </div>                
             </div>
-            <div class="sec6__circle">
-                <img class="sec6__circleList" src="image/circle1.png" alt="">
-                <img class="sec6__circleList" src="image/circle2.png" alt="">
-                <img class="sec6__circleList" src="image/circle1.png" alt="">
-                <img class="sec6__circleList" src="image/circle1.png" alt="">
+            <div class="course__circle">
+                <img class="course__circleList" src="image/circle1.png" alt="">
+                <img class="course__circleList" src="image/circle2.png" alt="">
+                <img class="course__circleList" src="image/circle1.png" alt="">
+                <img class="course__circleList" src="image/circle1.png" alt="">
             </div>
-        </section>
-        <!-----------------------section 6 ends here----------------->
-
+        </div>
         
-        <!------------------------footer starts here----------------->
-        <footer class="foot">
+    </section>
+
+<!--section seven-->
+    <footer class="foot">
+        <div class="foot__wrapper">
             <div class="foot__container">
-                <div class="foot__div1">
-                    <h3 class="foot__head">Acarereview</h3>
-                    <p class="foot__dscr">Pellentesque viverra arcu et dignissim vehicu la. Donec a velit ac dolor dapibus pelle tes que sit amet at erat. Pha sellus porttitor, justo eu ult rices vulputate, nisi mi plac erat lectus, sed rutrum tell us est id urna.</p>
+                <div class="foot__acare">
+                    <h3 class="foot__title">Acarereview</h3>
+                    <p class="foot__description">Pellentesque viverra arcu et dignissim vehicu la. Donec a velit ac dolor dapibus pelle tes que sit amet at erat. Pha sellus porttitor, justo eu ult rices vulputate, nisi mi plac erat lectus, sed rutrum tell us est id urna.</p>
                     <div class="foot__img">
-                        <img class="foot__imglist" src="image/fb.png" alt="">
-                        <img class="foot__imglist" src="image/ig.png" alt="">
-                        <img class="foot__imglist" src="image/lin.png" alt="">
-                        <img class="foot__imglist" src="image/tw.png" alt="">
+                        <a href=""><img class="foot__img_list" src="image/fb.png" alt=""></a>
+                        <a href=""><img class="foot__img_list" src="image/ig.png" alt=""></a>
+                        <a href=""><img class="foot__img_list" src="image/lin.png" alt=""></a>
+                        <a href=""><img class="foot__img_list" src="image/tw.png" alt=""></a>
                     </div>
                 </div>
                 
-                <div class="foot__items">
+                <div class="foot__about">
                         <ul class="foot__menu">
                             <li class="foot__list">About Us</li>
                             <li class="foot__list">Support</li>
@@ -357,7 +392,7 @@
                             <li class="foot__list">About Us</li>
                         </ul>
                 </div>
-                <div class="foot__items">
+                <div class="foot__about">
                         <ul class="foot__menu">
                             <li class="foot__list">About Us</li>
                             <li class="foot__list">About Us</li>
@@ -367,14 +402,14 @@
                             <li class="foot__list">About Us</li>
                         </ul>
                 </div>
-                <div class="foot__items">
+                <div class="foot__about">
                         <ul class="foot__menu">
                             <li class="foot__list">About Us</li>
                             <li class="foot__list">About Us</li>
                             <li class="foot__list">About Us</li>
                         </ul>
                 </div>
-                <div class="foot__items">
+                <div class="foot__about">
                         <ul class="foot__menu">
                             <li class="foot__list">About Us</li>
                             <li class="foot__list">About Us</li>
@@ -386,11 +421,9 @@
             </div>
             
             <hr class="foot__rule">
-            <p class="foot__p">&copy; 2022 Acarereview. All rights reserved.</p>
-        </footer>
-        <!------------------------footer ends here---------------------->
-    </div>
-
-    
+            <p class="foot__copy_right">&copy; 2022 Acarereview. All rights reserved.</p>
+        </div>
+        
+    </footer>
 </body>
 </html>

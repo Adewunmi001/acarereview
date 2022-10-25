@@ -1,77 +1,130 @@
-.sec2 {
-    position: relative;
-    background: rgba(247, 242, 229, 0.6);
+.service {
+    background: $service-color;
 
-    &__container {
-        display: flex;
-        padding-top: 1.187rem;
-        padding-right: 7.25rem;
-        padding-bottom: 4.68rem;
-        padding-left: 14.75rem;
+    &__wrapper {
+        @extend .review__wrapper;
     }
 
-    &__img {
-        width: 34.56rem;
-        height: 35.68rem;
-        z-index: 2;
-        // border-radius: 11.06rem;
-        // transform: matrix(-1, 0, 0, 1, 0, 0);
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 5.28rem;
+        padding-bottom: 4.29rem;
+        gap: 2rem;
+
+        @media screen and (min-width:1024px) {
+            flex-direction: row;
+            padding-left: 2rem;
+            padding-bottom: 8.29rem;
+        }
+
+        @media screen and (min-width:1440px) {
+            gap: 5rem;
+        }
+    }
+
+    &__illustration {
+        position: relative;
+    }
+
+    &__image {
+        z-index: 4;
+        position: relative;
     }
 
     &__ribbon {
-        position: absolute;
+        display: none;
+
+        @media screen and (min-width: 1024px) {
+            display: initial;
+            position: absolute;
+        }
     }
 
     &__ribbon--activea {
-        top: 5.28rem;
-        left: 7.375rem;
+        @media screen and (min-width: 1024px) {
+            top: 0rem;
+            left: -5.37rem;
+        }
+        
     }
     &__ribbon--activeb {
-        top: 4.562rem;
-        left: 34.56rem;
+        @media screen and (min-width: 1024px) {
+            top: 1rem;
+            right: 4.5rem;
+        }
     }
+
     &__ribbon--activec {
-        bottom: 4.68rem;
-        left: 12.625rem;
+        @media screen and (min-width: 1024px) {
+            bottom: -6rem;
+            left: 0rem;
+        }
     }
+
     &__ribbon--actived {
-        bottom: 7.625rem;
-        left: 35.375rem;
+        @media screen and (min-width: 1024px) {
+            bottom: -1rem;
+            right: 6rem;
+        }
+    }
+    
+
+    &__content {
+        text-align: center;
+        padding-bottom: 2.5rem;
+
+        @media screen and (min-width: 1024px) {
+            text-align: left;
+        }
     }
 
-    &__div {
-        padding-top: 11rem;
-        padding-bottom: 13.5rem;
-    }
-
-    &__head {
+    &__title {
         font-weight: 700;
-        font-size: 2rem;
-        line-height: 39px;
+        font-size: 1.5rem;
+        line-height: 28px;
         letter-spacing: 0.01em;
-        color: rgba(51, 39, 0, 0.9);
-        transform: rotate(0.71deg);
-        padding-bottom: 2.002rem;
+        color: $ninth-color;
+        padding-bottom: 1rem;
+        max-width: 28ch;
+
+        @media screen and (min-width:768px) {
+            line-height: 39px;
+            font-size: 2rem;
+            padding-bottom: 2.002rem;
+        }
+
+        @media screen and (min-width: 1024) {
+            max-width: 45ch;
+        }
     }
 
-    &__p {
+    &__description {
         font-weight: 500;
         font-size: 1rem;
         line-height: 20px;
         letter-spacing: 0.01em;
-        color: rgba(0, 0, 0, 0.7);
+        color: $service-description-color;
         padding-bottom: 2.5rem;
+        max-width: 57ch;
     }
 
     &__btn {
         padding: 0.937rem 2.187rem;
-        background: #FFCC54;
+        background: $btn-color;
         border-radius: 0.937rem;
         text-decoration: none;
-        color: #332700;font-weight: 500;
+        color: $btn-text;
+        font-weight: 500;
         font-size: 2.126rem;
         line-height: 42px;
         letter-spacing: 0.01em;
         
+    }
+
+    &__btn:hover {
+        background: $hover-btn-color;
     }
 }

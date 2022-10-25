@@ -1,75 +1,106 @@
-.sec3 {
-    position: relative;
-    background: #FFFBF0;
+.platform {
+    background: $background;
 
-    &__container {
-        display: flex;
-        justify-content: center;
-        padding-right: 5.9rem;
-        padding-left: 7.37rem;
+    &__wrapper {
+        @extend .review__wrapper;
         
     }
 
-    &__div {
-        padding-right: 4.68rem;
-        // flex: 1 0 527px;
+    &__flex {
+        @extend .service__flex;
     }
 
-    &__head {
-        padding-top: 12.43rem;
+    &__content {
+        @extend .service__content;
+    }
+
+    &__title {
         font-weight: 700;
-        font-size: 2rem;
-        line-height: 39px;
+        font-size: 1.5rem;
+        line-height: 28px;
         letter-spacing: 0.01em;
-        color: rgba(51, 39, 0, 0.9);
-        transform: rotate(0.71deg);
-        padding-bottom: 1.99rem;
-        padding-right: 5.24rem;
+        color: $ninth-color;
+        padding-bottom: 1rem;
+        max-width: 30ch;
+
+        @media screen and (min-width:768px) {
+            line-height: 39px;
+            font-size: 2rem;
+            padding-bottom: 2.002rem;
+        }
     }
 
-    &__p {
-        font-weight: 500;
-        font-size: 1rem;
-        line-height: 20px;
-        letter-spacing: 0.01em;
-        color: rgba(0, 0, 0, 0.7);
-        padding-bottom: 3.06rem;
-        width: 527px;
+    &__description {
+        @extend .service__description;
     }
 
     &__btn {
-        padding: 0.937rem 2.18rem;
-        background: #FFCC54;
-        border-radius: 0.937rem;
-        text-decoration: none;
-        color: #332700;font-size: 2.12rem;
-        line-height: 42px;
-        letter-spacing: 0.01em;
+        @extend .service__btn;
     }
 
-    &__img {
-        padding-bottom: 13.023rem;
-        z-index: 2;
+    &__btn:hover {
+        background: $hover-btn-color;
     }
 
-    &__ribbon {
+    &__ilustration {
         position: absolute;
     }
 
+    &__image {
+        z-index: 24;
+        position: relative;
+    }
+
+    &__ribbon {
+        display: none;
+
+        @media screen and (min-width: 1024px) {
+            display: initial;
+            position: relative;
+        }
+    }
+
     &__ribbon--activea {
-        top: 8rem;
-        right: 40rem;
+        @media screen and (min-width: 1024px) {
+            top: -30rem;
+            right: 0.5rem;
+        }
+        @media screen and (min-width:1440px) {
+            top: -45rem;
+            right: 0.5rem;
+        }
+        
     }
     &__ribbon--activeb {
-        top: 4.25rem;
-        right: 11.37rem;
+        @media screen and (min-width: 1024px) {
+            top: -30rem;
+            right: -17rem;
+        }
+        @media screen and (min-width: 1440px) {
+            top: -45rem;
+            right: -20rem;
+        }
+        
     }
     &__ribbon--activec {
-        bottom: 8.75rem;
-        right: 6.812rem;
+        @media screen and (min-width: 1024px) {
+            bottom: 19.75rem;
+            right: -10.812rem;
+        }
+        @media screen and (min-width: 1440px) {
+            bottom: 10.75rem;
+            right: -5.812rem;
+        }
+        
     }
     &__ribbon--actived {
-        right: 36.625rem;
-        bottom: 13.812rem;
+        @media screen and (min-width: 1024px) {
+            right: 15rem;
+            bottom: 25.812rem;
+        }
+        @media screen and (min-width: 1440px) {
+            right: 26em;
+            bottom: 17.812rem;
+        }
     }
 }

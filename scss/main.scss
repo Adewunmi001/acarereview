@@ -1,17 +1,16 @@
 @import 'abstract/functions';
 @import 'abstract/mixin';
+@import 'abstract/reset';
 @import 'abstract/variables';
 
-@import 'base/fonts';
-@import 'base/color';
 @import 'base/general';
 
 @import 'components/buttons';
+@import 'components/toggle';
 
 @import 'layouts/footer';
 @import 'layouts/section2';
 @import 'layouts/section1';
-@import 'layouts/header';
 @import 'layouts/navigation';
 @import 'layouts/section3';
 @import 'layouts/section4';

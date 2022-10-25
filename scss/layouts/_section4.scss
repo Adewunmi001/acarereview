@@ -1,60 +1,89 @@
-.card {
-    background: #FFFBF0;
-    width: 100%;
+.basic{
+    background: $background;
     margin-top: -10px;
 
-
-    &__div1 {
-        display: flex;
-        justify-content: space-between;
-        padding-left: 9.62rem;
-        padding-right: 9.43rem;
-        padding-top: 10px;
+    &__wrapper {
+        @extend .review__wrapper;
     }
 
-    &__head {
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        gap: 1rem;
+    }
+
+    &__title {
+        text-align: center;
         font-weight: 700;
-        font-size: 2rem;
-        line-height: 39px;
+        font-size: 1.5rem;
+        line-height: 20px;
         letter-spacing: 0.01em;
         color: rgba(51, 39, 0, 0.9);
+
+        @media screen and (min-width:768px) {
+            text-align: left;
+            font-size: 2rem;
+            line-height: 39px;
+        }
         
     }
 
-    &__arrow {
+    &__switch {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+
+        @media screen and (min-width: 768px) {
+            gap: 2.062rem;
+            display: flex;
+        }
+    }
+
+    &__cards {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2.062rem;
+        padding-top: 3.75rem;
+        padding-bottom: 5.25rem;
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+        }
+        
     }
 
-    &__container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2.062rem;
-        padding-left: 9.62rem;
-        padding-right: 9.43rem;
-    }
-
-    &__div {
-        width: 21.625rem;
-        background: rgba(254, 227, 207, 0.5);
+    &__card {
+        width: 18.5rem;
+        background: $first-card-background;
         box-shadow: 4px 4px 10px #FFEFDF;
         text-align: center;
-        margin-top: 3.75rem;
-        margin-bottom: 5.25rem;
         border-radius: 1.178rem;
+
+        @media screen and (min-width:768px) {
+            width: 21.625rem;
+        }
     }
 
-    &__div--active {
-        background: rgba(79, 146, 182, 0.95);
+    &__card--active {
+        background: $second-card-background;
         box-shadow: 4px 4px 20px rgba(79, 146, 182, 0.7);
-        width: 22.93rem;
+        width: 18.5rem;
+
+        @media screen and (min-width:768px) {
+            width: 22.93rem;
+        }
     }
 
-    &__bgImg {
-        background: rgba(193, 214, 229, 0.5);
+    &__card--active:hover {
+        transform: translateY(-5px);
+    }
+
+    &__card_image {
+        background: $card-first-image-bg;
         filter: blur(1px);
         width: 5.75rem;
         height: 5.75rem;
@@ -66,16 +95,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
 
-    &__bgImg--active {
+    &__card_image--active {
         width: 7.5rem;
         height: 7.5rem;
         background: rgba(255, 239, 223, 0.9);
         filter: blur(1.30435px);
     }
 
-    &__head2 {
+    &__card_title {
         font-weight: 500;
         font-size: 1.375rem;
         line-height: 27px;
@@ -84,8 +114,11 @@
         padding-top: 1.312rem;
         padding-bottom: 1.25rem;
     }
+    &__card_title--active {
+        color: #EEE6DC;
+    }
 
-    &__p {
+    &__description {
         font-weight: 500;
         font-size: 0.9rem;
         line-height: 18px;
@@ -96,7 +129,8 @@
         padding-right: 1.06rem;
     }
 
-    &__p--active {
+    &__description--active {
         padding: 0rem 2.312rem 5.62rem 2.62rem;
+        color: rgba(238, 230, 220, 0.9);
     }
 }
